@@ -9,7 +9,7 @@ class main {
 }
 
 
-//another program:
+//another program: (nextLine, Next,NextDouble)
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
