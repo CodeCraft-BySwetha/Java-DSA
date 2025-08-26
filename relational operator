@@ -1,0 +1,18 @@
+question:write a program accept the age of the users wheather the user is eligle to cast vote
+Age is supposed to be > than 18
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("enter the age");
+        Scanner scan = new Scanner(System.in);
+        int num= scan.nextInt();
+        if(num>=18){
+            System.out.println("eligle to vote");
+        }else{
+            System.out.println(" not eligle to vote");
+        }
+    }
+
+}
