@@ -1,0 +1,30 @@
+question :
+switch case - which print the day of the week based on the input
+0- sunday, 1- monday,  2- tuesday
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("enter input");
+        Scanner scan = new Scanner(System.in);
+        int day= scan.nextInt();
+        switch(day){
+            case 0:
+                System.out.println("sunday");
+                break;
+            case 1:
+                System.out.println("monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            default:
+                System.out.println("invalid input");
+                break;
+
+        }
+
+        
+    }
+}
