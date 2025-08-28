@@ -1,0 +1,136 @@
+class human{
+    // properties ->> attributes, methods-functions
+    //class->blueprint of an Object
+    // object-> instance of class -copy
+    //method -function
+    int age;
+    String nickname; // properties 
+     // function-methods with arguments takes-> (data type,variablename
+    boolean hasmobile(){
+        return true;
+    }
+    
+}
+class Main{
+    public static void main(String[] args){
+        human rex = new human();
+        rex.age =25;
+        rex.nickname="r";
+        human nandy =new human();
+        nandy.age = 45;
+        nandy.nickname ="nandhini";
+        boolean nandyhasmobile=nandy.hasmobile();
+        System.out.println(nandyhasmobile);
+        System.out.println(nandy.age);
+        System.out.println(nandy.nickname);
+        System.out.println(rex.age);
+        System.out.println(rex.nickname);
+    }
+}
+
+
+
+
+
+class human{
+    // properties ->> attributes, methods-functions
+    //class->blueprint of an Object
+    // object-> instance of class -copy
+    //method -function
+    int age;
+    String nickname; // properties 
+     // function-methods with arguments takes-> (data type,variablename
+    boolean hasmobile(boolean input){
+        return input;
+    }
+    int getagein25years(){
+        return age+25;
+    }
+    
+}
+class Main{
+    public static void main(String[] args){
+        human rex = new human();
+        rex.age =25;
+        rex.nickname="r";
+        human nandy =new human();
+        nandy.age = 45;
+        nandy.nickname ="nandhini";
+        boolean nandyhassmobile =true;
+        boolean nandyhasmobile=nandy.hasmobile(nandyhassmobile);
+        int ageofnandy=nandy.getagein25years();
+        System.out.println(nandyhasmobile);
+        System.out.println(ageofnandy);
+
+        
+        
+    }
+}
+
+// (void,parsing aruments)
+class human{
+    int age;
+    String nickname; 
+    boolean hasmobile(boolean input){
+        return input;
+    }
+    void getagein25years(){
+        System.out.println(age+25);
+    }
+    
+}
+class Main{
+    public static void main(String[] args){
+        human rex = new human();
+        rex.age =25;
+        rex.nickname="r";
+        human nandy =new human();
+        nandy.age = 45;
+        nandy.nickname ="nandhini";
+        boolean nandyhassmobile =true;
+        boolean nandyhasmobile=nandy.hasmobile(nandyhassmobile);
+        nandy.getagein25years();
+
+        
+        
+    }
+}
+
+
+// (static ,public private , protected, package specifier)
+
+
+class human{
+    int age;
+    String nickname; 
+    // access specifier - public, private, protected
+    //public -can acceses outside the class
+    // private - only can access insdde the class
+    // protected - package - subpackage \ folder
+    //if u don't provide any of three then go with this
+    //(it can access inside the package )->package private
+
+    boolean hasmobile(boolean input){
+        return input;
+    }
+    // static (main.main)
+    static String getintial(){
+        return "r";
+    }
+class Main{
+    public static void main(String[] args){
+        String s =human.getintial();
+        System.out.println(s);
+    }
+}
+}
+
+//part -2
+
+
+
+
+
+
+
+                                                 
