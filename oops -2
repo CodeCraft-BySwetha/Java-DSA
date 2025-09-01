@@ -21,3 +21,31 @@ class Main {
         System.out.println(swetha.accountname);
     }
 }
+
+
+
+encapsulation:
+
+class AmazonAccount{
+    private String accountname;
+   private int amazonpaybalance;
+   // getters and setters
+   public int getamazonpaybalance(){
+       return this.amazonpaybalance;
+   }
+   public void setamazonpaybalance(int amazonpaybalance){
+       this.amazonpaybalance=amazonpaybalance;
+   }
+}
+class Main {
+    public static void main(String[] args) {
+        AmazonAccount swetha =new AmazonAccount();
+        swetha.setamazonpaybalance(30);
+        System.out.println(swetha.getamazonpaybalance());
+    }
+}
+
+
+inheritance:
+
+
