@@ -1,0 +1,23 @@
+class AmazonAccount{
+    String accountname;
+    int amazonpaybalance;
+    public AmazonAccount(){
+        System.out.println("called constructor");
+    }
+    public AmazonAccount(int amazonpaybalance, String name){  //parameterized constructor
+        this.amazonpaybalance = amazonpaybalance;
+        this.accountname =name;
+    }
+    public AmazonAccount(String name){
+        this.accountname=name;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        AmazonAccount nandy =new AmazonAccount();
+        AmazonAccount swetha =new AmazonAccount(200,"swetha");
+        AmazonAccount swey =new AmazonAccount("swey");
+        System.out.println(swetha.amazonpaybalance);
+        System.out.println(swetha.accountname);
+    }
+}
