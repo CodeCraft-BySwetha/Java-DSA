@@ -1,3 +1,5 @@
+constructor:
+
 class AmazonAccount{
     String accountname;
     int amazonpaybalance;
@@ -24,7 +26,7 @@ class Main {
 
 
 
-encapsulation:
+encapsulation: getters and setter (hiding of data)
 
 class AmazonAccount{
     private String accountname;
@@ -46,6 +48,168 @@ class Main {
 }
 
 
-inheritance:
+inheritance: (super class = extention)
+
+
+class BiCycle{
+    private String numberplate;
+    BiCycle(String numberplate){
+        this.numberplate = numberplate;
+    }
+    public String getnumberplate(){
+        return this.numberplate;
+    }
+    public void horn(){
+        System.out.println("horn!!!!!!");
+    }
+}
+class ElectricBiCycle extends BiCycle{
+    private String numberplate;
+    private int speedcontrol;
+    ElectricBiCycle(String numberplate, String version){
+        super(numberplate);
+        this.version=version;
+    }
+class pedalcycle extends BiCycle{
+    pedalcycle(String numberplate){
+        super(numberplate);
+    }
+    public void pushfaster(){
+        System.out.println("pushhhh!!!!!!");
+    }
+}
+class Main{
+    public static void main(String [] args);
+    ElectricBiCycle electric = new ElectricBiCycle("tn8035","ex12");
+    System.out.println(electric.getnumberplate());
+   }
+}
+
+
+
+polymorphism: (many forms -> ability to show )
+
+class BiCycle{
+    private String numberplate;
+    BiCycle(String numberplate){
+        this.numberplate = numberplate;
+    }
+    public String getnumberplate(){
+        return this.numberplate;
+    }
+    public void horn(){
+        System.out.println("horn!!!!!!");
+    }
+}
+class ElectricBiCycle extends BiCycle{
+    private String numberplate;
+    private int speedcontrol;
+    ElectricBiCycle(String numberplate, String version){
+        super(numberplate);
+        this.version=version;
+    }
+    // method overloading
+    public void increasespeed(){
+        System.out.println("increases by 2!!!");
+    }
+    public void increasespeed(int input){
+        System.out.println(input);
+    }
+    @overide
+    public void horn(){
+        System.out.println("horn!!!!!!");
+    }
+
+class pedalcycle extends BiCycle{
+    pedalcycle(String numberplate){
+        super(numberplate);
+    }
+    public void pushfaster(){
+        System.out.println("pushhhh!!!!!!");
+    }
+}
+class Main{
+    public static void main(String [] args);
+    ElectricBicycle elec = new ElectricBicycle("tndeqsqs");
+    elec.horn();
+    elec.increasespeed(4);
+    elec.increasespeed();
+   }
+}
+
+
+abstraction: ( hidding the implementation but providing whatever required)
+
+
+abstract class Animal {
+    // Abstract method
+    abstract void sound();
+}
+
+// Dog class
+class Dog extends Animal {
+    // overide
+    void sound() {
+        System.out.println("Dog says: Bow Bow");
+    }
+}
+
+// Cat class
+class Cat extends Animal {
+    //overide
+    void sound() {
+        System.out.println("Cat says: Meow Meow");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Dog(); // Using abstract class reference
+        Animal a2 = new Cat();
+
+        a1.sound(); // Dog sound
+        a2.sound(); // Cat sound
+    }
+}
+
+
+other way of implmenting abstraction; interface
+
+
+interface Animal {
+    void sound(); // Abstract method
+}
+
+// Dog class implements interface
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Dog says: Bow Bow");
+    }
+}
+
+// Cat class implements interface
+class Cat implements Animal {
+    public void sound() {
+        System.out.println("Cat says: Meow Meow");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Dog(); // Using interface reference
+        Animal a2 = new Cat();
+
+        a1.sound(); // Dog sound
+        a2.sound(); // Cat sound
+    }
+}
+
+
+
+
+
+
 
 
